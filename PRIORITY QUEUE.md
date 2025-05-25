@@ -1,37 +1,41 @@
-# Exp.No:37  
-## PRIORITY QUEUE
-
+# Exp.No:14D
+## Deque - DELETION
 ---
-
 ### AIM  
-To write a Python program for simple implementation of Priority Queue using Queue.
+To write a Python program to delete elements at FRONT END of deque using a collection built-in function.
+---
+### ALGORITHM  
+
+1. Import the `deque` class from the `collections` module.  
+2. Create an empty deque.  
+3. Define how many elements to input (e.g., 3 inputs as in the example).  
+4. Loop through the range of input size:  
+   - Read an integer from the user.  
+   - Append the integer to the deque.  
+5. Remove the front element of the deque using `popleft()`.  
+6. Print the final deque after deletion.  
 
 ---
 
-### ALGORITHM
-
-1. Start the program.  
-2. Define a class `PriorityQueue` with an initializer to create an empty list `queue`.  
-3. Define the `__str__` method to return queue elements as a string separated by spaces.  
-4. Define the `isEmpty()` method to check if the queue is empty.  
-5. Define the `insert(data)` method to append the given data to the queue.  
-6. Define the `delete()` method to:  
-   - Initialize `max_val` as 0.  
-   - Loop through the queue and find the index of the maximum value.  
-   - Delete and return the element at that index.  
-7. In the main code, take integer input `n` for number of elements.  
-8. Loop `n` times to take input values and insert them into the priority queue.  
-9. Print the contents of the queue.  
-10. While the queue is not empty, call `delete()` and print each returned element.  
-11. End the program.
-
----
-
-### PROGRAM
+### PROGRAM  
 
 ```
+import collections
+n1=input()
+n2=input()
+n3=input()
+
+col=collections.deque([n1,n2,n3])
+
+col.popleft()
+
+print("The deque after deletion is :")
+print(col)
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/b66575d8-4179-48cf-977c-f42cb0d14234)
+
 
 ### RESULT
+Thus , the given python program is implemented and executed sucessfully.
